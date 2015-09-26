@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6772D9081BB71F7100FA45E7 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772D9071BB71F7100FA45E7 /* ChecklistItem.swift */; settings = {ASSET_TAGS = (); }; };
 		67C839DB1BB4E97B006170AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C839DA1BB4E97B006170AB /* AppDelegate.swift */; };
-		67C839DD1BB4E97B006170AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C839DC1BB4E97B006170AB /* ViewController.swift */; };
+		67C839DD1BB4E97B006170AB /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C839DC1BB4E97B006170AB /* ChecklistViewController.swift */; };
 		67C839E01BB4E97B006170AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C839DE1BB4E97B006170AB /* Main.storyboard */; };
 		67C839E21BB4E97B006170AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C839E11BB4E97B006170AB /* Images.xcassets */; };
 		67C839E51BB4E97B006170AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67C839E31BB4E97B006170AB /* LaunchScreen.xib */; };
@@ -26,10 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6772D9071BB71F7100FA45E7 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		67C839D51BB4E97B006170AB /* ShitToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShitToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C839D91BB4E97B006170AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67C839DA1BB4E97B006170AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67C839DC1BB4E97B006170AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67C839DC1BB4E97B006170AB /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		67C839DF1BB4E97B006170AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67C839E11BB4E97B006170AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		67C839E41BB4E97B006170AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				67C839DA1BB4E97B006170AB /* AppDelegate.swift */,
-				67C839DC1BB4E97B006170AB /* ViewController.swift */,
+				67C839DC1BB4E97B006170AB /* ChecklistViewController.swift */,
 				67C839DE1BB4E97B006170AB /* Main.storyboard */,
 				67C839E11BB4E97B006170AB /* Images.xcassets */,
 				67C839E31BB4E97B006170AB /* LaunchScreen.xib */,
 				67C839D81BB4E97B006170AB /* Supporting Files */,
+				6772D9071BB71F7100FA45E7 /* ChecklistItem.swift */,
 			);
 			path = ShitToDo;
 			sourceTree = "<group>";
@@ -156,7 +159,8 @@
 		67C839CD1BB4E97B006170AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "yoon kevin kang";
 				TargetAttributes = {
 					67C839D41BB4E97B006170AB = {
@@ -212,7 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C839DD1BB4E97B006170AB /* ViewController.swift in Sources */,
+				67C839DD1BB4E97B006170AB /* ChecklistViewController.swift in Sources */,
+				6772D9081BB71F7100FA45E7 /* ChecklistItem.swift in Sources */,
 				67C839DB1BB4E97B006170AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +281,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShitToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoon.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,6 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShitToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoon.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -370,6 +378,7 @@
 				);
 				INFOPLIST_FILE = ShitToDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoon.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShitToDo.app/ShitToDo";
 			};
@@ -385,6 +394,7 @@
 				);
 				INFOPLIST_FILE = ShitToDoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoon.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShitToDo.app/ShitToDo";
 			};
@@ -409,6 +419,7 @@
 				67C839F61BB4E97B006170AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67C839F71BB4E97B006170AB /* Build configuration list for PBXNativeTarget "ShitToDoTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +428,7 @@
 				67C839F91BB4E97B006170AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
